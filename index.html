@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Laurence Bernardo</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="background"></div>
+        
+        <div id="mySidenav" class="sidenav">
+    
+            <a style="display:block;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a style="display:block;" href="#">About</a>
+            <a style="display:block;" href="#">Services</a>
+            <a style="display:block;" href="#">Clients</a>
+            <a style="display:block;" href="#">Contact</a>
+            
+            <div class="sidenav-footer" id="footer">
+                <p style="color:white; text-align: center;">Contact: </p>
+                <div class="section" style="display: block; text-align: center;">
+                <a href="https://www.linkedin.com/in/lsbernardo/">
+                    <img src="images/linkedin-icon.png" width="25" height="25"></a>
+                <a href="mailto:lsbernardo95@gmail.com">
+                    <img src="images/email-icon.png" width="25" height="25"></a>
+                <a href="https://github.com/lsbernardo95">
+                    <img src="images/github-icon.png" width="25" height="25"></a>
+                </div>
+            </div>
+
+        </div>
+        <span class="menu" onclick="openNav()">&#9776;</span>
+
+
+
+        <div class="resume" id="resume">
+            <!-- <div class="left"> -->
+                <h1 style="text-align: center;">Work Experience</h1>
+
+                <div class="box">
+
+                    <div class="companies" onclick="location.href='#experience';">
+                        <img src="https://logodownload.org/wp-content/uploads/2019/09/raytheon-logo-0.png">
+                    </div>
+                    <div class="companies">
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-oracle-logologobrand-logoiconslogos-251519939816xngul.png">
+                    </div>
+                    <div class="companies">
+                        <img src="https://dg6qn11ynnp6a.cloudfront.net/wp-content/uploads/2017/10/02102317/Niagara-Logo-1020x510.png">
+                    </div>
+                    <div class="companies">
+                        <img src="https://broncoathletics.com/images/2014/9/24/logorelease1.png?preset=large.socialmediaimage">
+                    </div>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="right">
+                <p>world</p>
+            </div> -->
+        </div>
+
+
+
+        <div id="experience">
+            <p> this is my experience</p>
+        </div>
+      
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+          document.getElementById("footer").style.width = "200px";
+          document.getElementById("resume").style.marginLeft = "200px";
+
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("resume").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  opacity: 0.5;
+  background-image:url('../images/bg.jpeg');
+  height: 100%;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resume {
+  width: 100%;
+  position:relative;
+}
+
+.resume .left, .right{
+  width: 50%;
+  float: left;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(195, 230, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav-footer {
+  position: absolute;
+  bottom: 20px;
+  /*idth: 100%;*/
+  /* background-color: red; */
+  /*color: white;*/
+  /*text-align: center;*/
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu {
+  font-size:30px;
+  top: 0px;
+  left: 10px;
+  cursor:pointer; 
+  padding: 5px;
+  position: fixed;
+}
+
+.box {
+  height: 300px;
+  background-color: gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* display: flex; */
+}
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+.companies {
+  display: inline-flex;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+}
+.companies img {
+  max-width: 100%;
+  min-height: 100%;
+  display: block;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
