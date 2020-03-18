@@ -4,82 +4,242 @@
 <head>
     <meta charset="utf-8">
     <title>Laurence Bernardo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/default.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
+
+    <header>
+      <nav id="navid" class="navbar navbar-expand-sm navbar-custom navbar-light fixed-top">  
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">laurence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     
-    <div class="background"></div>
+
+    <div class="background" id="bg1" style="background-image: url('images/bg.jpeg');">
+      <ul class="text hidden">
+        <li class="ghost">L</li>
+        <li class="ghost">a</li>
+        <li class="ghost">u</li>
+        <li class="ghost">r</li>
+        <li class="ghost">e</li>
+        <li class="ghost">n</li>
+        <li class="ghost">c</li>
+        <li class="ghost">e</li>
         
-        <div id="mySidenav" class="sidenav">
+      </ul>
+      <ul class="text hidden" style="top: 60%;">
+        <li class="ghost">B</li>
+        <li class="ghost">e</li>
+        <li class="ghost">r</li>
+        <li class="ghost">n</li>
+        <li class="ghost">a</li>
+        <li class="ghost">r</li>
+        <li class="ghost">d</li>
+        <li class="ghost">o</li>
+      </ul>
+    </div>
+
+    <div class="container" id="about">
+      <div class="row" style="padding-top: 1in; padding-bottom: 1in;">
+        <div class="col d-flex align-items-center justify-content-center">
+          <img src="images/laurence.bernardo.jpg" class="rounded-circle" width="50%">
+        </div>
+        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+          <p style="font-family: 'freight display pro';">Currently working as a Software Engineer for Raytheon Space and Airborne Systems. Experienced Software Engineer with a demonstrated history of working in the Computer Software industry. Strong engineering professional with a Bachelor of Science (B.S.) focused in Computer Engineering from California State Polytechnic University-Pomona. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="background" id="bg2" style="background-image: url('https://wallpaperplay.com/walls/full/1/5/e/217031.jpg'); height: 100vh;"></div>
+
+
+    <div class="container" id="About">
+      <div class="row" style="padding-top: 1in; padding-bottom: 1in;">
+        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+          <h2 style="font-family: 'freight display pro';"><b>A few fun facts about myself</b></h2>
+          <p style="font-family: 'freight display pro';">
+            My name is Laurence and I work out of El Segundo, CA. 
+            <br>
+            I have a dog named Nori(Seaweed in Japanese). 
+            <br>
+            My favorite foods include pad thai, curry, and oreos. 
+            <br>
+            I play my NBA career in a video game.
+            <br>
+            Learning to become a car detailing enthusiast.
+          </p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <img src="images/nori.jpeg" class="rounded" width="50%">
+        </div>
+      </div>
+    </div>
+
+    <div class="background" id="bg3" style="background-image: url('http://getwallpapers.com/wallpaper/full/c/3/2/378526.jpg'); height: 100vh;"></div>
+
+
+
     
-            <a style="display:block;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a style="display:block;" href="#">About</a>
-            <a style="display:block;" href="#">Services</a>
-            <a style="display:block;" href="#">Clients</a>
-            <a style="display:block;" href="#">Contact</a>
-            
-            <div class="sidenav-footer" id="footer">
-                <p style="color:white; text-align: center;">Contact: </p>
-                <div class="section" style="display: block; text-align: center;">
-                <a href="https://www.linkedin.com/in/lsbernardo/">
-                    <img src="images/linkedin-icon.png" width="25" height="25"></a>
-                <a href="mailto:lsbernardo95@gmail.com">
-                    <img src="images/email-icon.png" width="25" height="25"></a>
-                <a href="https://github.com/lsbernardo95">
-                    <img src="images/github-icon.png" width="25" height="25"></a>
-                </div>
+
+
+
+
+    <div id="resume" class="carousel slide" data-ride="carousel" style="background-color: gray; height: 60vh;">
+      <div class="container" style="height: 100%">
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner" style="height: 100%">
+          <div class="carousel-item active" style="height: 100%">
+            <div class="row" style="height: 100%">
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://www.phenxint.com/wp-content/uploads/2018/04/raytheon-logo.png" class="rounded">
+              </div>
+              <div class="col d-flex align-items-center justify-content-center">
+                • Designed a Web application using the Flask framework to monitor activities of AWS EC2, S3, SQS
+                <br>
+                • Wrote up the application using HTML, CSS, Javascript, and jQuery for its front end
+                <br>
+                • Utilized AWS CLI and AWS python library to control AWS EC2 instances and S3 buckets
+                <br>
+                • Configured Jenkins Jobs to automate the build/test process of projects
+                <br>
+                • Integrated web application testing using Selenium and Java to perform smoke tests on enterprise web tools
+                <br>
+                • Wrote Ansible playbooks to automate configuration/upgrades of servers to containerize the web tools by using Docker
+              </div>
             </div>
-
+          </div>
+          <div class="carousel-item" style="height: 100%">
+            <div class="row" style="height: 100%">
+              <div class="col d-flex align-items-center justify-content-center">
+                • Designed innovative industry-focused solutions to clients using Oracle Cloud products such as Big Data, Database, Internet of Things, and Integration
+                <br>
+                • Introduce clients to new technology like artificial intelligence, augmented/virtual reality, and blockchain to drive up company success
+              </div>
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://png2.cleanpng.com/sh/fa8f29fa2da621aa80af80cd014bba8c/L0KzQYm3VMI0N5V9iZH0aYP2gLBuTf9zaZRxfZ9sbHB4dH7qjP92bF5oh995dYTsfri0jCJia51qRdV4coDygrL7if9vNZVmRdhybnHxc7rojL10bZR5hAQ2NXHndYW3hMI6PZZrTqo3NUa6Q4aCWcIyPWM5TaMAMEK5RoK7Ub5xdpg=/kisspng-oracle-cloud-cloud-computing-oracle-corporation-da-financial-sector-5ade40d295ef68.5673599215245150266141.png" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 100%">
+            <div class="row" style="height: 100%">
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://www.pngkey.com/png/full/651-6514009_cal-poly-pomona-logo.png" class="rounded">
+              </div>
+              <div class="col d-flex align-items-center justify-content-center">
+                • Analyzed customers’ common problems and improved efficiency in providing technical assistance
+                <br>
+                • Recorded incidents and requests of faculty, staff, and students using ServiceNow ticketing software
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="menu" onclick="openNav()">&#9776;</span>
+        <a class="carousel-control-prev" href="#resume" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#resume" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
 
+    <div class="background" id="bg4" style="background-image: url('images/bg.jpeg'); height: 100vh;"></div>
 
+    <div class="contacts" id="contact" style="background-color:rgb(212, 106, 106);">
 
-        <div class="resume" id="resume">
-            <!-- <div class="left"> -->
-                <h1 style="text-align: center;">Work Experience</h1>
+      <div class="footer">
+          <p style="color: rgb(255, 170, 170); text-align: center;">Contact: </p>
+          <div style="display: block; text-align: center;">
+          <a href="https://www.linkedin.com/in/lsbernardo/">
+              <img src="images/linkedin-icon.png" title="linkedin" width="25" height="25">
+          </a>
+          <a href="mailto:lsbernardo95@gmail.com">
+              <img src="images/email-icon.png" title="email" width="25" height="25">
+          </a>
+          <a href="https://github.com/lsbernardo95">
+              <img src="images/github-icon.png" title="github" width="25" height="25">
+          </a>
+          </div>
+      </div>
+                
+    </div>
 
-                <div class="box">
-
-                    <div class="companies" onclick="location.href='#experience';">
-                        <img src="https://logodownload.org/wp-content/uploads/2019/09/raytheon-logo-0.png">
-                    </div>
-                    <div class="companies">
-                        <img src="https://purepng.com/public/uploads/large/purepng.com-oracle-logologobrand-logoiconslogos-251519939816xngul.png">
-                    </div>
-                    <div class="companies">
-                        <img src="https://dg6qn11ynnp6a.cloudfront.net/wp-content/uploads/2017/10/02102317/Niagara-Logo-1020x510.png">
-                    </div>
-                    <div class="companies">
-                        <img src="https://broncoathletics.com/images/2014/9/24/logorelease1.png?preset=large.socialmediaimage">
-                    </div>
-                </div>
-            <!-- </div> -->
-            <!-- <div class="right">
-                <p>world</p>
-            </div> -->
-        </div>
-
-
-
-        <div id="experience">
-            <p> this is my experience</p>
-        </div>
-      
+    <!-- <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-custom");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+    </script> -->
     <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "200px";
-          document.getElementById("footer").style.width = "200px";
-          document.getElementById("resume").style.marginLeft = "200px";
+      var bg1distance = $('#bg1').offset().top;
+      var bg2distance = $('#bg2').offset().top;
+      var bg3distance = $('#bg3').offset().top;
+      var bg4distance = $('#bg4').offset().top;
 
+      $(window).scroll(function() {
+        var $nav = $(".navbar-custom");
+        var $nav1 = $(".navbar-custom.scrolled");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+        if ( $(this).scrollTop() < bg2distance ) {
+          $nav1.attr("style", "background-color: rgb(221, 183, 154); transition: background-color 200ms linear;");
         }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("resume").style.marginLeft = "0px";
+
+        else if ( $(this).scrollTop() >= bg2distance && $(this).scrollTop() < bg3distance ) {
+          $nav1.attr("style", "background-color: rgb(114, 120, 237); transition: background-color 200ms linear;");
         }
+        else if ( $(this).scrollTop() >= bg3distance && $(this).scrollTop() < bg4distance ) {
+          $nav1.attr("style", "background-color: rgb(113, 107, 133); transition: background-color 200ms linear;");
+        }
+        else {
+          $nav1.attr("style", "background-color: rgb(212, 106, 106); transition: background-color 200ms linear;");
+        }
+      });
     </script>
+    <script>
+    $(function() {
+      var text = $(".text");
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 100) {
+          text.removeClass("hidden");
+        } else {
+          text.addClass("hidden");
+        }
+        if (scroll > 750) {
+          text.addClass("hidden");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
